@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+# Malt
 
-You can use the [editor on GitHub](https://github.com/ZINhuahin/Zumba-Songkran-Fiesta/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Event marketing template for Jekyll. Browse through a [live demo](https://whispering-boat.cloudvent.net/).
+Increase the web presence of your event with this configurable theme.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Malt](images/_screenshot.jpg)
 
-### Markdown
+CloudCannon was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
-```markdown
-Syntax highlighted code block
+## Features
 
-# Header 1
-## Header 2
-### Header 3
+* Pre-built page
+* Pre-styled components
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* SEO tags
+* Google Analytics
+* [EventBrite](https://www.eventbrite.com/)
+* Contact Form
+* Featured
+* Image Gallery
 
-- Bulleted
-- List
+## Setup
 
-1. Numbered
-2. List
+1. Add your site details in `_config.yml`.
+2. Add your Google Analytics to `_config.yml`.
+3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-**Bold** and _Italic_ and `Code` text
+## Develop
 
-[Link](url) and ![Image](src)
-```
+Malt was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Install the dependencies with [Bundler](http://bundler.io/):
 
-### Jekyll Themes
+~~~bash
+$ bundle install
+~~~
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ZINhuahin/Zumba-Songkran-Fiesta/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
-### Support or Contact
+~~~bash
+$ bundle exec jekyll serve
+~~~
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Editing
+
+Malt is already optimised for updating pages, company details and footer elements in CloudCannon.
+
+## SEO Tag
+
+This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin. You should at least set a title in front matter on each page. Have a look at the [project page](https://github.com/jekyll/jekyll-seo-tag) for more options.
+
+## Google Analytics
+
+[Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
+
+1. Add your Google Analytics key to `_config.yml`.
+2. Run your site in production `JEKYLL_ENV=production` (the default for CloudCannon and GitHub Pages).
+
+## EventBrite
+
+[EventBrite](https://www.eventbrite.com/) is a third party embeddable event module for websites. To install:
+
+1. Create an event on EventBrite.
+2. Copy the Ticket Form embed code from the Widgets menu item.
+3. Paste it into `eventbrite_embed` in `_config.yml`.
+
+## Image gallery / Featured
+
+The image gallery is populated by a front matter array in `index.html`. To add items just copy the existing structure.
