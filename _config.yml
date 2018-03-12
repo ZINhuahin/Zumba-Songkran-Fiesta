@@ -3,9 +3,9 @@
 
 title: Zumba Songkran Fiesta
 url: "https://www.facebook.com/events/433432927075584/"
-baseurl:
+baseurl: Zumba-Songkran-Fiesta
 google_analytics_key: 
-google_maps_javascript_api_key: "AIzaSyAfLRVePw8pQvZy7J8xTySJ0UCOBUhA5HQ"
+google_maps_javascript_api_key: AIzaSyAfLRVePw8pQvZy7J8xTySJ0UCOBUhA5HQ
 eventbrite_embed: '<div style="width:100%; text-align:left;"><iframe src="https://eventbrite.com/tickets-external?eid=42792551674&ref=etckt" frameborder="0" height="300" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" ></div></div>'
 timezone: Asia/Bangkok
 
