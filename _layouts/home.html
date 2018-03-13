@@ -1,0 +1,80 @@
+---
+layout: default
+map:
+  address: 52/52 Petchkasem Road Amphoe Hua Hin, Prachuap Khiri Khan, Thailand 77110
+  zoom: 16
+  latitude: 12.53799
+  longitude: 99.95875
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  <div class="content">
+    <p>
+    <a href="https://www.eventbrite.com/e/zumba-songkran-fiesta-tickets-42792551674?ref=ebtn" target="_blank" class="d-flex justify-content-center btn btn-primary btn-lg active" role="button" aria-pressed="true">Get ticket now</a>
+    </p>
+  {{ content }}
+  </div>
+<hr>
+  <h3 class="d-flex justify-content-center">Featured Zumba in Town</h3>
+    {% include Featured.html %}
+<hr>
+  <h3 class="d-flex justify-content-center">Get your tickets</h3>
+    <div class="embed-responsive embed-responsive-21by9">
+      <iframe src="https://eventbrite.com/tickets-external?eid=42792551674&ref=etckt" class="embed-responsive-item" frameborder="0" height="275" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true">
+        
+      </iframe>
+    </div>
+<hr>  
+  <h3 class="d-flex justify-content-center">Location</h3>
+    <p class="d-flex justify-content-center">
+      <a href="http://www.truearenahuahin.com" target="_blank"> True Arena Hua Hin</a>
+    </p>
+    
+    <iframe class="embed-responsive" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=52%2F52%20Petchkasem%20Road%20Amphoe%20Hua%20Hin%2C%20Prachuap%20Khiri%20Khan%2C%20Thailand%2077110&key=AIzaSyCF3kF_c66vS9SQLrrUxJH42uEzXl_OCBA" allowfullscreen></iframe>
+
+    <address>
+      <a href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{% include icons/place.svg %} {{ page.map.address }}</a>
+    </address>
+  <!-- <h3 class="d-flex justify-content-center">Photos</h3> -->
+  <!-- {% for photo in page.photos %}
+    <div class="grid-item"><a class="fancybox" rel="group" href="{% include relative-src.html src=photo.image %}"><img src="{% include relative-src.html src=photo.image %}" alt="{{ photo.title }}"/></a></div>
+  {% endfor %} -->
+
+  <!-- <h3 class="d-flex justify-content-center">Contact</h3> -->
+<!-- 
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+ -->
+<hr>
+  <h3 class="d-flex justify-content-center">Tell your friends</h3>
+    <div class="d-flex justify-content-center">
+      {% assign share_url = page.url | absolute_url | cgi_escape %}
+      <a class="facebook p-2" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}">{% include icons/social-icon.html icon="Facebook" %}</a>
+      <a class="twitter p-2" href="https://twitter.com/intent/tweet?url={{ share_url }}&amp;text=I'm%20going%20to%20this%20event!">{% include icons/social-icon.html icon="Twitter" %}</a>
+      <a class="google-plus p-2" href="https://plus.google.com/share?url={{ share_url }}">{% include icons/social-icon.html icon="Google Plus" %}</a>
+      <a class="linkedin p-2" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ share_url }}">{% include icons/social-icon.html icon="LinkedIn" %}</a>
+      <a class="email p-2" href="mailto:?subject=I'm going to this event&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include icons/social-icon.html icon="Email" %}</a>
+    </div>
+</div>
